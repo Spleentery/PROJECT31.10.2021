@@ -274,21 +274,21 @@ int** transposeMatrix () {
     {
         t[i] = new int[n];
     }
-    for (int i = 0; i < 2; ++i) {
-        for (int j = 0; j < 2; ++j) {
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
             t[i][j] = a[j][i];
         }
     }
     std::cout << "Original matrix:" << std::endl;
-     for (int i = 0; i < 2; ++i) {
-        for (int j = 0; j < 2; ++j) {
+     for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
            std::cout << a[i][j] << " ";
     }
     std::cout << "\n";
     }
     std::cout << "Transpoze Matrix:" << std::endl;
-    for (int i = 0; i < 2; ++i) {
-        for (int j = 0; j < 2; ++j) {
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
            std::cout << t[i][j] << " ";
     }
     std::cout << "\n";
